@@ -33,6 +33,7 @@ where:
 - end_test_id - an optional end test id (1 .. 80)
 
 e.g.
+
 java -jar -Xmx1024m FOKI2.jar onto\001 true    -- program run in the fuzzy only mode for test 1
 
 java -jar -Xmx1024m FOKI2.jar onto\001 false   -- program run in the full mode (may take more than 2 hours) for test 1
