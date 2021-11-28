@@ -2,10 +2,12 @@
 
 FuzzyLogicRelationAlignment is a repository which contains:
 - FOKI2.jar - a java precompliled program to identify mappings between instances of two OWL ontologies;
-- onto.zip - a packed folder with ontologies (extended version of the OAEI 2018::Instance Matching Track (http://islab.di.unimi.it/content/im_oaei/2018/))
 - fis.zip - a packed folder with a configuration for fuzzy logic used for instance alignment
 
-The onto folder contains 80 subfolders (001 .. 080) with test cases.
+The test data for the program (onto.zip) is available under the link:
+https://drive.google.com/file/d/17QIT6S5g6xSZIOPMWe7DT7Psrl1QRFjb/view?usp=sharing
+
+The onto.zip contains a packed onto folder with 80 subfolders (001 .. 080) with test cases.
 Each subfolder contains:
 - onto_source.owl - a source ontology
 - onto_target.owl - a target ontology
@@ -17,7 +19,7 @@ Each subfolder contains:
 Requirements:
 - java jdk version 8.1 installed
 
-The program can be run in two modes switched by the fuzzy_logic_only parameter:
+The program (FOKI2.jar) can be run in two modes switched by the fuzzy_logic_only parameter:
 - Full mode (fuzzy_logic_only set to false) - the program first considers all the pairs of instances from two ontologies, and - if they are promissing (have anything in common) it calculates the metrics and stores their values in metrics2.txt file. The calculation can take more than 2 hours! After that, the program uses a fuzzy logic module to decide if two instances from the source and target ontologies are equivalent or not; the equivalent instances are stored in the FOKI_refalign.rdf file; at the end the program compares the found alignments with the reference alignments (refalign.rdf) and prints Precision, Accurrcy, Recall, and F-Measure. 
  - Fuzzy only mode (fuzzy_logic_only set to true) - the program reads the metrics from metrics2.txt and uses the fuzzy logic module to decide if two instances are equivalent; the rest of processing is the same as in the full mode.
 
