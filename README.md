@@ -25,7 +25,9 @@ To run the program:
 - Download the whole content of the repository to your computer
 - Create a folder and copy FOKI2.jar to it and unpack onto.zip and fis.zip in it
 - Being in that location open a console window and write:
+
 java -jar -Xmx1024m FOKI2.jar ontology_folder fuzzy_logic_only [[start_test_id] [end_test_id]]
+
 where:
 - ontology_folder - a path to the folder with ontologies, e.g. onto, onto\001
 - fuzzy_logic_only - false, to run the program in the full mode (see a remark below); false - to run the program in fuzzy logic only model
