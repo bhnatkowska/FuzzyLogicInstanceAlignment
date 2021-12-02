@@ -1,11 +1,13 @@
 # FuzzyLogicInstanceAlignment
 
-FuzzyLogicRelationAlignment is a repository which contains:
+FuzzyLogicInstanceAlignment is a repository which contains:
 - FOKI2.jar - a java precompliled program to identify mappings between instances of two OWL ontologies;
 - fis.zip - a packed folder with a configuration for fuzzy logic used for instance alignment
 
 The test data for the program (onto.zip) is available under the link:
 https://drive.google.com/file/d/17QIT6S5g6xSZIOPMWe7DT7Psrl1QRFjb/view?usp=sharing
+The results of fuzzy logic isntance alignment for the test data are available under the link:
+https://drive.google.com/file/d/1v3YyYqvPk3D8Q8mwbZNao5_OYTLYn87n/view?usp=sharing
 
 The onto.zip contains a packed onto folder with 80 subfolders (001 .. 080) with test cases.
 Each subfolder contains:
